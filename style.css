@@ -1,0 +1,25 @@
+body {
+    background-color: #2d3334;
+    color: azure;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #444c4e;
+}
+
+.botao {
+    background-color: rgb(20, 20, 20);
+    color: azure;
+    padding: 20px;
+    border-radius: 5px; 
+    margin: 0 10px 0 10px;
+    border: none;
+}
+
+.botao:hover {
+    background-color: #2d3334;
+    transform: scale(1.17);
+    cursor: pointer;
+}
