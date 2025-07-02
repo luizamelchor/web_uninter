@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Janela</title>
+</head>
+<body>
+    <button type="button" onclick="testarJanela()">Testar janela</button>
+    <script type="text/javascript">
+        var janelaAberta = window.open('','','width=400,height=400');
+        function testarJanela() {
+            if (janelaAberta.closed) {
+                alert('A janela foi fechada');
+            } else {
+                alert('A janela está aberta');
+            };
+        }
+    </script>
+</body>
+</html>

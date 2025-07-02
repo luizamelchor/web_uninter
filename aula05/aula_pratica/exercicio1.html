@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do círculo</title>
+</head>
+<body>
+    <!-- 
+    Implemente um programa que calcule a área de um círculo, a partir do raio informado pelo usuário
+    -->
+    <script>
+        // Solicitando a área do círculo
+        let raio = prompt('Insira o raio do círculo: ');
+
+        // Convertendo string para número
+        raio=parseFloat(raio);
+
+        // Calculando a área do círculo
+        const area=Math.PI*Math.pow(raio,2);
+
+        // Exibindo o resultado
+       //console.log('A área do círculo é: ', area)
+        alert("A área do círculo é: " +area.toFixed(2))
+    </script>
+</body>
+</html>
+
+

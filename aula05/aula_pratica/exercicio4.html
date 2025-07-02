@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de números</title>
+</head>
+<body>
+    <!--
+    Faça um programa que receba dez números, calcule e mostre a quantidade e números pares e ímpares digitados
+    -->
+    <script>
+        // Criando um array vazio para armazenar os números
+        let numeros = [];
+
+        // Pede ao usuário para digitar 10 números e armazena cada um no array
+        for (let i = 0; i < 10; i++) {
+            numeros.push(parseInt(prompt(`Digite o ${i + 1}º número: `)));
+        }
+
+        // Variáveis para armazenar a quantidade de números pares e ímpares
+        let pares = 0;
+        let impares = 0;
+
+        // Recorre o array de númers e verifica se cada um é par ou ímpar 
+        for (let i = 0; i < numeros.length; i++) {
+            if (numeros[i] % 2 === 0) {
+                pares++;
+            } else {
+                impares++;
+            }
+        }
+
+        // Exibe a quantidade de números pares e ímpares
+        console.log(`Quantidade de números pares: ${pares}`);
+        console.log(`Quantidade de números ímpares: ${impares}`);
+
+        alert(`Quantidade de números pares: ${pares}\nQuantidade de números ímpares: ${impares}`);
+    </script>
+</body>
+</html>

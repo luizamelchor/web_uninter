@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            font: 10px sans-serif;
+        }
+
+        body {
+            margin: 0 10px;
+        }
+
+        h1 {
+            font-size: 16px;
+            margin: 0 0 16px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            margin: 16px 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        li > b {
+            color: red;
+            font-size: 14px;
+        }
+
+        button {
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            color: white;
+            background: #369;
+            font-size: 14px;
+            width: 50%;
+            margin: auto 0 16px auto;
+        }
+
+        .container {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .produto {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            border: 1px solid #ccc;
+            border-radius: 16px;
+            padding: 8px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 8px;
+            max-width: 28rem;
+            margin: 1rem;
+        }
+
+        @media all and (min-width: 560px) {
+            body {
+                margin: 0 auto;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                flex-flow: row wrap;
+            }
+
+            .produto {
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="container">
+        <section class="produto">
+            <h1>Cimento Itaú CP-II</h1>
+            <img src="../imagens/cimento.png" alt="Saco cimento Itaú" width="250px">
+                <ul>
+                    <li>R$ <b>34,70</b></li>
+                    <li>2x <b>17,35</b></li>
+                    <li>cód 123456</li>
+                </ul>
+                <button type="button">Mais...</button>
+        </section>
+
+        <section class="produto">
+            <h1>Tijolo de Barro Comum</h1>
+            <img src="../imagens/tijolo.png" alt="Tijolo de barro" width="250px">
+                <ul>
+                    <li>R$ <b>0,60</b></li>
+                    <li>2x <b>0,35</b></li>
+                    <li>cód 123456</li>
+                </ul>
+                <button type="button">Mais...</button>
+        </section>
+
+        <section class="produto">
+            <h1>Cal Hidratada Itaú</h1>
+            <img src="../imagens/cal.png" alt="Cal hidratada" width="250px">
+                <ul>
+                    <li>R$ <b>18,90</b></li>
+                    <li>2x <b>9,45</b></li>
+                    <li>cód 123456</li>
+                </ul>
+                <button type="button">Mais...</button>
+        </section>
+
+        <section class="produto">
+            <h1>Revestimento 3d</h1>
+            <img src="../imagens/revestimento.png" alt="Revestimento 3d" width="250px">
+                <ul>
+                    <li>R$ <b>108,00</b></li>
+                    <li>2x <b>56,00</b></li>
+                    <li>cód 123456</li>
+                </ul>
+                <button type="button">Mais...</button>
+        </section>
+        
+        <section class="produto">
+            <h1>Porcelanato 59x118 cm</h1>
+            <img src="../imagens/porcelanato.jpeg" alt="Porcelanato polido" width="250px">
+                <ul>
+                    <li>R$ <b>89,90</b></li>
+                    <li>2x <b>47,90</b></li>
+                    <li>cód 123456</li>
+                </ul>
+                <button type="button">Mais...</button>
+        </section>
+
+        <section class="produto">
+            <h1>Azulejo Adesivo</h1>
+            <img src="../imagens/azulejo.png" alt="Azulejo adesivo" width="250px">
+                <ul>
+                    <li>R$ <b>45,90</b></li>
+                    <li>2x <b>23,30</b></li>
+                    <li>cód 123456</li>
+                </ul>
+                <button type="button">Mais...</button>
+        </section>
+
+        <section class="produto">
+            <h1>Pendente de Madeira</h1>
+            <img src="../imagens/pendente.jpg" alt="Pendente de madeira" width="250px">
+                <ul>
+                    <li>R$ <b>24,99</b></li>
+                    <li>2x <b>14,10</b></li>
+                    <li>cód 123456</li>
+                </ul>
+                <button type="button">Mais...</button>
+        </section>
+
+        <section class="produto">
+            <h1>Caixa D'Água 500L</h1>
+            <img src="../imagens/caixa.png" alt="Caixa d'água" width="250px">
+                <ul>
+                    <li>R$ <b>239,90</b></li>
+                    <li>2x <b>119,95</b></li>
+                    <li>cód 123456</li>
+                </ul>
+                <button type="button">Mais...</button>
+        </section>
+
+        <section class="produto">
+            <h1>Bomba Pressurizadora</h1>
+            <img src="../imagens/bomba.jpg" alt="Bomba pressurizadora" width="250px">
+                <ul>
+                    <li>R$ <b>604,70</b></li>
+                    <li>2x <b>302,35</b></li>
+                    <li>cód 123456</li>
+                </ul>
+                <button type="button">Mais...</button>
+        </section>
+    </article>
+</body>
+</html>

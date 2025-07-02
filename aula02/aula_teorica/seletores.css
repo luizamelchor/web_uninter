@@ -1,0 +1,17 @@
+*{
+    text-align: center;
+    color: cadetblue;
+}
+
+p{
+    text-align: justify;
+    color: brown;
+}
+
+#p{
+    color: blueviolet;
+}
+
+.p{
+    color: chartreuse;
+}

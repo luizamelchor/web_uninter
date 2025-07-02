@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+        function abreJanela() {
+            novaJanela=window.open('history.html', '_blank', 'width=400,height=400');
+        }
+
+        function fechaJanela() {
+            novaJanela.close();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="abreJanela()">Abrir janela</button>
+    <button onclick="fechaJanela()">Fechar janela</button>
+</body>
+</html>

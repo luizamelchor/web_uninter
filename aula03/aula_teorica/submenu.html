@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submenu</title>
+    <style>
+        /* Removendo bulltes e identação das listas */
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            width: 150px;
+        }
+
+        /* Agora vamos posicionar os itens da lista, vamos definir o posicionamento com o valor relative, porque depois iremos posicionar os sub-menus na posiçã absoluta em relação a eles. */
+        ul li {
+            position: relative;
+        }
+
+        /* Os sub-menus ficarão a esquerda do elemento pai e usarão display: none para ficarem ocultos até o hover. O left é para dar passar o mouse para o lado do sub-menu */
+        li ul {
+            position: absolute;
+            left: 149px;
+            top: 0;
+            display: none;
+        }
+
+        /* O display: block é usado para que cada link ocupe toda a largura definda para ele na lista */
+        ul li a {
+            display: block;
+            text-decoration: none;
+            color: rgb(247, 38, 38);
+            background: #fff;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            background: #ccc;
+        }
+
+        li:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home">Home</a>
+            <ul>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#lojas">Nossas lojas</a></li>
+            </ul>
+        </li>
+        <li><a href="#news">Notícias</a></li>
+        <li><a href="#contato">Contatos</a></li>
+    </ul>
+</body>
+</html>
